@@ -8,6 +8,6 @@ const link2 = 'https://tecnoblog.net/sobre/apple/iphone-11/'
 console.log(link2.match(regex2))
 
 // Parte 2
-const regexTitulo = /(?<=<a.*title=">).*(?=")/
-const regexData = /(?<=<time.*>)\d{2}\/\d{2}\/\d{4}/
-const regexTexto = /(?<=<p>).*(?=<p>)/gm
+const regexTitulo = /<a [^>]*?>(.*?)<\/a>)/
+const regexData = /(?<=<time.*?>)(\d{2}\/\d{2}\/\d{4})/
+const regexTexto = /(?<=<p>).*?(?=<p>)/gm
